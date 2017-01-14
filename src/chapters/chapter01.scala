@@ -3,14 +3,17 @@ package chapters
 import scala.math.BigInt
 import scala.util.Random
 
-class Chapter01 {
+object Chapter01 {
   def runExercises {
 //    Note: I'm omitting any exercises that are just retrieving info from the repl or scaladocs
+
+    println("-------------Beginning Chapter 01 Exercises------------------")
     exercise2
     exercise4("crazy", 3)
     exercise6
     exercise8
     exercise9
+    println("*************Ending Chapter 01 Exercises*****************\n")
   }
 
   // 2. In the scala repl, calculate the square root of three, then square it
