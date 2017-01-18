@@ -5,4 +5,6 @@
 .worksheet
 .idea
 bin
+out
+target
 *.iml

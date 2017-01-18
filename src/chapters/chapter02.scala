@@ -11,6 +11,7 @@ object Chapter02 {
     exercise7
     exercise8
     exercise9
+    exercise10
     println("*************Ending Chapter 02 Exercises*****************\n")
   }
 
@@ -91,6 +92,22 @@ object Chapter02 {
 
     val phrase = "Hello"
     print(f"The product of unicode values in $phrase is ${recursiveProduct(phrase)}\n")
+  }
+
+  //10. Create a recursive x^n function, as described in the book
+  def exercise10: Unit = {
+    def pow(base: Integer, exponent: Integer): Double = {
+      if (exponent < 0) 1 / pow(base, -exponent)
+      else if (exponent > 0)
+        if (exponent % 2 == 0) pow(base, (exponent / 2)) * pow(base, exponent / 2)
+        else base * pow(base, exponent - 1)
+      else 1
+    }
+
+    println(f"The value of 2^0 is ${pow(2, 0)}")
+    println(f"The value of 2^2 is ${pow(2, 2)}")
+    println(f"The value of 3^3 is ${pow(3, 3)}")
+    println(f"The value of 4^-2 is ${pow(4, -2)}")
   }
 }
 
