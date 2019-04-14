@@ -6,6 +6,7 @@ import scala.util.Random
 object Chapter01 {
   def runExercises {
 //    Note: I'm omitting any exercises that are just retrieving info from the repl or scaladocs
+//    Adding this comment to see how the web interface for editing works    
 
     println("-------------Beginning Chapter 01 Exercises------------------")
     exercise2
